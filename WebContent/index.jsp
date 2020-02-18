@@ -8,5 +8,12 @@
 </head>
 <body>
 111111   没有显示  index.jsp 中具体内容  为什么?
+
+<form action="index.do" method = "post">
+	<p>
+		<input type="submit" value="login"/>
+	</p>
+</form>
+
 </body>
 </html>
