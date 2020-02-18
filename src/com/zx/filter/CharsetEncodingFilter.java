@@ -26,7 +26,11 @@ public class CharsetEncodingFilter implements Filter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
+		System.out.println("encoding char set is:"+charset);
 		
+		request.setCharacterEncoding(charset);
+		response.setCharacterEncoding(charset);
+		chain.doFilter(request, response);
 	}
 
 	@Override

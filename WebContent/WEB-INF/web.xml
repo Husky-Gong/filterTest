@@ -21,7 +21,7 @@
  <filter-mapping>
  	<filter-name>filterDemo</filter-name>
  	<!-- filter URLs using following format -->
- 	<url-pattern>/i.html</url-pattern>
+ 	<url-pattern>/*</url-pattern>
  </filter-mapping>
  
  <filter>
@@ -33,6 +33,12 @@
  		<param-value>ISO-8859-1</param-value>
  	</init-param>
  </filter>
+ <!-- filter address as following -->
+ <filter-mapping>
+ 	<filter-name>charsetEncodingFilter</filter-name>
+ 	<!-- Filter URL with following format -->
+ 	<url-pattern>/*</url-pattern>
+ </filter-mapping>
 
  </web-app>
  
